@@ -8,7 +8,7 @@ const Description = () => {
       <h2 className="text-4xl md:text-5xl w-full md:max-w-2xl text-zinc-600">
         A whole world of freelance talent at your fingertips
       </h2>
-      <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+      <div className="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-3 lg:gap-5">
         <div className="flex flex-col gap-2 my-auto">
           <Image
             alt=""
