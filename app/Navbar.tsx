@@ -13,10 +13,9 @@ const Navbar = () => {
     { label: "Become a Seller", href: "/" },
   ];
 
-  const smallScreens = ``
 
   return (
-    <header className="border-b h-16 px-6">
+    <header className="sticky z-50 top-0 border-b h-16 px-6 bg-white">
       <nav className="flex items-center h-16 justify-between container mx-auto md:max-w-7xl">
         <Link href="/">
           {" "}
