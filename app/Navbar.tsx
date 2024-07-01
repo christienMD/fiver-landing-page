@@ -16,7 +16,7 @@ const Navbar = () => {
   const smallScreens = ``
 
   return (
-    <header className="border-b h-16">
+    <header className="border-b h-16 px-6">
       <nav className="flex items-center h-16 justify-between container mx-auto md:max-w-7xl">
         <Link href="/">
           {" "}

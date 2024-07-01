@@ -1,6 +1,6 @@
 import React from 'react'
 
-const SearchIput = () => {
+const SearchInput = () => {
   return (
     <form className="w-full md:max-w-xl mx-auto">
       <div className="relative">
@@ -36,4 +36,4 @@ const SearchIput = () => {
   );
 }
 
-export default SearchIput
+export default SearchInput

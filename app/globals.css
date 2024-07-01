@@ -24,4 +24,12 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .bg-radial-center {
+    background: radial-gradient(
+      circle,
+      rgba(167, 243, 208, 0.5) 0%,
+      rgba(167, 243, 208, 0) 70%
+    );
+  }
 }
