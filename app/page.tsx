@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Description from "./components/Description";
 import FieverrPro from "./components/FieverrPro";
 import Testimonials from "./components/Testimonials";
+import FiverrLogoMaker from "./components/FiverrLogoMaker";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Description />
         <FieverrPro />
         <Testimonials />
+        <FiverrLogoMaker />
       </main>
     </>
   );
