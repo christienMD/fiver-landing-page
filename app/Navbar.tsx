@@ -145,8 +145,8 @@ const Navbar = () => {
             </div>
           </li>
 
-          {links.map((link) => (
-            <li key={link.href} className="hidden md:block">
+          {links.map((link , index) => (
+            <li key={index} className="hidden md:block">
               <Link
                 className="text-gray-500 flex gap-2 items-center hover:text-green-500 font-semibold"
                 href={link.href}
