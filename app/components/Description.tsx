@@ -1,5 +1,6 @@
+
 import Image from 'next/image';
-import React from 'react'
+import VideoDescription from "./VideoDescription";
 
 const Description = () => {
   return (
@@ -67,6 +68,8 @@ const Description = () => {
           </p>
         </div>
       </div>
+
+      <VideoDescription />
     </div>
   );
 }

@@ -54,9 +54,9 @@ const Services = () => {
   return (
     <div className="container mx-auto md:max-w-7xl mt-7">
       <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-4">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <ServiceCard
-            key={service.image}
+            key={index}
             title={service.title}
             image={service.image}
           />
