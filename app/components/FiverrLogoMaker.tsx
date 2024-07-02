@@ -3,7 +3,7 @@ import React from "react";
 
 const FiverrLogoMaker = () => {
   return (
-    <section className="bg-[#ffeded] grid md:grid-cols-2 gap-3 container mx-auto md:max-w-7xl my-10 p-10 rounded-md h-96">
+    <section className="bg-[#ffeded] grid lg:grid-cols-2 gap-6 container mx-auto md:max-w-7xl my-10 p-10 rounded-md h-full">
       <div className="flex flex-col gap-6">
         <svg
           width="249"
@@ -40,13 +40,17 @@ const FiverrLogoMaker = () => {
           Try Fiverr Logo Maker
         </button>
       </div>
-      <div className="flex item-center justify-center">
-        <Image
-          alt=""
-          src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_460,dpr_1.0/v1/attachments/generic_asset/asset/55292bd34319d97ef4e9fd48d9f8758d-1704795769965/logo-maker-lohp.png"
-          width={400}
-          height={500}
-        />
+      <div className="flex items-center justify-center">
+        <div className="relative w-[296px] h-[199px]">
+          <Image
+            alt=""
+            src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_460,dpr_1.0/v1/attachments/generic_asset/asset/55292bd34319d97ef4e9fd48d9f8758d-1704795769965/logo-maker-lohp.png"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768) 100vw, (max-width: 1200px) 50vw, 33vw"
+            quality={75}
+          />
+        </div>
       </div>
     </section>
   );
