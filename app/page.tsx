@@ -8,6 +8,7 @@ import FiverrLogoMaker from "./components/FiverrLogoMaker";
 import FiverrMade from "./components/FiverrMade";
 import GetHelp from "./components/GetHelp";
 import JoinFiverr from "./components/JoinFiverr";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <GetHelp />
         <JoinFiverr />
       </main>
+       <Footer />
     </>
   );
 }
