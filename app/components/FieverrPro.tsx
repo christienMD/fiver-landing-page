@@ -20,7 +20,7 @@ const FieverrPro = () => {
             <path d="M139 24.5201V24.5629C139 25.814 138.003 26.8294 136.771 26.8294C135.541 26.8294 134.542 25.8152 134.542 24.5629V24.5201C134.542 23.269 135.539 22.2537 136.771 22.2537C138.001 22.2537 139 23.269 139 24.5201Z"></path>
           </g>
         </svg>
-        <h2 className="text-3xl sm:text-4xl md:text-6xl w-full">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl w-full">
           New e-Commerce project management service{" "}
           <span className="font-bold">made for your business</span>
         </h2>

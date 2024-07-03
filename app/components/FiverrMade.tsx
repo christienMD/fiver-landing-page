@@ -57,9 +57,14 @@ const FiverrMade = () => {
   return (
     <div className="container mx-auto md:max-w-7xl mb-10">
       <FiverrHeading label="Made on Fiverr" />
-      <div className="grid md:grid-cols-3 lg:grid-cols-4 mt-7 gap-3">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-7 gap-3 justify-center">
         {cardItems.map((item) => (
-          <FiverrMadeItemCard key={item.imgUrl} title={item.title} author={item.author} imgUrl={item.imgUrl} />
+          <FiverrMadeItemCard
+            key={item.imgUrl}
+            title={item.title}
+            author={item.author}
+            imgUrl={item.imgUrl}
+          />
         ))}
       </div>
     </div>

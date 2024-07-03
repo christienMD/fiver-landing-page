@@ -6,7 +6,7 @@ const GetHelp = () => {
   return (
     <section className="container mx-auto md:max-w-7xl">
       <FiverrHeading label="Guides to help you grow" />
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 justify-center md:gap-5 mt-10">
         <div className="">
           <div className="relative w-[267px] md:w-[225px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
             <Image

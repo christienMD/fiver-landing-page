@@ -1,7 +1,8 @@
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Sidebar from "./components/Sidebar";
-Link;
+import AnimatedSerch from "./components/AnimatedSerch";
+
 
 const Navbar = () => {
   const links = [
@@ -55,6 +56,10 @@ const Navbar = () => {
             </g>
           </svg>
         </Link>
+        <div className="hidden sm:block lg:hidden">
+              <AnimatedSerch />
+        </div>
+
         <ul className="flex items-center gap-5">
           {/* dropdown 1 */}
           <li className="hs-dropdown hs-dropdown-1 relative hidden lg:inline-flex">

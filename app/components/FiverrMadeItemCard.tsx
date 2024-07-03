@@ -10,61 +10,44 @@ interface Props {
 
 const FiverrMadeItemCard = ({ title, author, imgUrl }: Props) => {
   return (
-
-    <div>
-      
+    <div className="relative h-72 w-72 lg:h-80 sm:w-full group">
+      {/* Image Section */}
+      <Image
+        alt={title}
+        src={imgUrl}
+        fill
+        className="rounded-md object-cover"
+        sizes="(max-width: 480px) 100vw, (max-width: 768px) 50vw, 33vw"
+      />
+      <div className="absolute inset-0 rounded-md bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      {/* Heart Icon */}
+      <HeartIcon className="absolute top-2 right-2 text-white h-10 w-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      {/* Text and Ellipsis Section */}
+      <div className="hidden group-hover:flex flex-col justify-end absolute inset-0 p-4 transition-all duration-300">
+        <div className="flex items-center justify-between">
+          <div className="text-white">
+            <p>
+              Featured in: <span className="font-bold">{title}</span>
+            </p>
+            <p>
+              by: <span className="font-bold">{author}</span>
+            </p>
+          </div>
+          <div className="hs-dropdown relative inline-flex">
+            <EllipsisHorizontalIcon
+              id="hs-dropdown-custom-icon-trigger"
+              className="hs-dropdown-toggle text-white h-10 w-10 mt-2 cursor-pointer hover:rounded-full hover:bg-white hover:text-black rounded-full"
+            />
+            <div
+              className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-white shadow-md rounded-lg p-2 mt-2 z-20"
+              aria-labelledby="hs-dropdown-custom-icon-trigger"
+            >
+              <p className="text-black">See Gig</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    // <div className="relative group mb-10">
-    //   <div className="relative h-[400px] w-[500px] group-hover:bg-gradient-to-t group-hover:from-black group-hover:to-black/50 group-hover:rounded-md transition-colors duration-300">
-    //       {/* No fixed height, images will take their natural height */}
-    //       <Image
-    //         alt={title}
-    //         src={imgUrl}
-    //         width={500}
-    //         height={400}
-    //         className=""
-    //       />
-
-    //     <div className="text-white absolute top-5 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hs-tooltip">
-    //       <HeartIcon className="hs-tooltip-toggle h-8 w-9 text-white group-hover:text-white cursor-pointer transition-colors duration-300" />
-    //       <span
-    //         className="hs-tooltip-content hs-tooltip-shown:opacity-100 hs-tooltip-shown:visible opacity-0 transition-opacity inline-block absolute invisible z-10 py-3 px-3 bg-gray-800 text-xs font-medium text-white rounded shadow-sm dark:bg-neutral-700"
-    //         role="tooltip"
-    //       >
-    //         Save to list
-    //       </span>
-    //     </div>
-
-    //     {/* description div */}
-    //     <div className="text-white absolute bottom-0 left-0 right-0 p-4 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-    //       <div>
-    //         <p>
-    //           Feautured In: <span className="font-bold">{title}</span>
-    //         </p>
-    //         <p>
-    //           By: <span className="font-bold">{author}</span>
-    //         </p>
-    //       </div>
-    //       <div>
-    //         <div className="hs-dropdown relative inline-flex">
-    //           <button
-    //             id="hs-dropdown-custom-icon-trigger"
-    //             type="button"
-    //             className="hs-dropdown-toggle flex justify-center items-center p-2 text-sm font-semibold rounded-full text-white shadow-sm bg-white"
-    //           >
-    //             <EllipsisHorizontalIcon className="h-6 w-6 text-white group-hover:text-black transition-colors duration-300" />
-    //           </button>
-    //           <div
-    //             className="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[100px] bg-white shadow-md rounded-lg p-2 mt-2 dark:bg-neutral-800 dark:border dark:border-neutral-700"
-    //             aria-labelledby="hs-dropdown-custom-icon-trigger"
-    //           >
-    //             <p className="text-black px-2">See Gig</p>
-    //           </div>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
   );
 };
 
