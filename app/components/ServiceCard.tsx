@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-interface Props {
+export interface Service {
   title: string;
   image: string;
 }
 
-const ServiceCard = ({ title, image }: Props) => {
+const ServiceCard = ({ title, image }: Service) => {
   return (
     <div className="flex flex-col items-center justify-between h-full">
       <div className="shadow-md flex items-center justify-center py-6 rounded-xl px-2 h-32 w-28 lg:w-32 hover:bg-radial-center cursor-pointer">

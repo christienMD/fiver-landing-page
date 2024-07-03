@@ -4,7 +4,7 @@ import React from "react";
 
 const GetHelp = () => {
   return (
-    <section>
+    <section className="container mx-auto md:max-w-7xl">
       <FiverrHeading label="Guides to help you grow" />
       <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mt-10">
         <div className="">
