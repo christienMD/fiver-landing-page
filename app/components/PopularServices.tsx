@@ -75,17 +75,7 @@ const PopularServices = () => {
   return (
     <div className="mt-20 mb-12 px-2">
       <h2 className="text-5xl font-light text-zinc-600">Popular services</h2>
-      {/* <div className="lg:hidden mt-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
-        {popularServices.map((service, index) => (
-          <PopularServiceCard
-            key={index}
-            title={service.title}
-            imgUrl={service.imgUrl}
-            bgColor={service.bgColor}
-          />
-        ))}
-      </div> */}
-      <div className="">
+      <div>
         <PopularServiceSwiper />
       </div>
     </div>

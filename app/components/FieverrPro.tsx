@@ -3,7 +3,7 @@ import React from "react";
 
 const FieverrPro = () => {
   return (
-    <section className="grid lg:grid-cols-2 text-white bg-green-950 mb-14 p-6 md:p-12 rounded-md">
+    <section className="container mx-auto md:max-w-7xl grid lg:grid-cols-2 text-white bg-green-950 mb-14 p-6 md:p-12 rounded-md">
       <div className="flex flex-col gap-10 p-6">
         <svg
           width="139"
