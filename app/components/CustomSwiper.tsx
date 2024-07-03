@@ -97,13 +97,14 @@ const CustomSwiper = ({
 
       <button
         ref={navPrevButton}
-        className={`prev-button absolute top-1/2 transform -translate-y-1/2 left-3 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow ${
+        className={`prev-button absolute top-1/2 transform -translate-y-1/2 left-3 z-10 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow ${
           isBeginning ? "hidden" : ""
         }`}
       >
         <svg
           width="8"
           height="15"
+          className="h-6 w-6"
           viewBox="0 0 8 15"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -116,13 +117,14 @@ const CustomSwiper = ({
 
       <button
         ref={navNextButton}
-        className={`next-button absolute top-1/2 transform -translate-y-1/2 right-3 z-10 bg-white rounded-full w-10 h-10 flex items-center justify-center shadow ${
+        className={`next-button absolute top-1/2 transform -translate-y-1/2 right-3 z-10 bg-white rounded-full w-12 h-12 flex items-center justify-center shadow ${
           isEnd ? "hidden" : ""
         }`}
       >
         <svg
           width="8"
           height="15"
+          className="h-6 w-6"
           viewBox="0 0 8 15"
           xmlns="http://www.w3.org/2000/svg"
         >

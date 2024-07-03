@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SearchInput from "../components/SearchInput";
+import Sidebar from "./Sidebar";
 
 const Hero = () => {
   return (
@@ -11,6 +12,8 @@ const Hero = () => {
       <div className="w-full px-6 md:px-0 mb-6">
         <SearchInput />
       </div>
+
+      
 
       <div className="hidden md:flex gap-5 items-center">
         <span className="text-white opacity-45 pe-2">Trusted by:</span>
