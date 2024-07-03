@@ -1,7 +1,6 @@
 "use client";
 
 import CustomSwiper from "./CustomSwiper";
-import PopularServiceCard from "./PopularServiceCard";
 import { popularServices } from "./PopularServices";
 
 const PopularServiceSwiper = () => {

@@ -7,12 +7,8 @@ import PopularServiceCard from "./PopularServiceCard";
 import "swiper/css";
 import "swiper/css/navigation";
 import SwiperCore, { Swiper as SwiperInstance } from "swiper";
+import ServiceCard, { Service } from "./ServiceCard";
 
-interface Service {
-  title: string;
-  imgUrl: string;
-  bgColor: string;
-}
 
 interface SwiperProps {
   data: Service[];
@@ -20,7 +16,7 @@ interface SwiperProps {
   spaceBetween?: number;
 }
 
-const CustomSwiper = ({
+const CustomServiceSwiper = ({
   data,
   slidesPerView = "auto",
   spaceBetween = 16,
@@ -29,20 +25,23 @@ const CustomSwiper = ({
   const navNextButton = useRef<HTMLButtonElement>(null);
   const [isBeginning, setIsBeginning] = useState(true);
   const [isEnd, setIsEnd] = useState(false);
-  const [slidesPerGroup, setSlidesPerGroup] = useState(1);
+    const [slidesPerGroup, setSlidesPerGroup] = useState(1);
 
-  useEffect(() => {
-    const calculateSlidesPerGroup = () => {
-      if (typeof window !== "undefined") {
-        setSlidesPerGroup(Math.floor(window.innerWidth / (250 + spaceBetween)));
-      }
-    };
+    useEffect(() => {
+      const calculateSlidesPerGroup = () => {
+        if (typeof window !== "undefined") {
+          setSlidesPerGroup(
+            Math.floor(window.innerWidth / (250 + spaceBetween))
+          );
+        }
+      };
 
-    calculateSlidesPerGroup();
+      calculateSlidesPerGroup();
 
-    window.addEventListener("resize", calculateSlidesPerGroup);
-    return () => window.removeEventListener("resize", calculateSlidesPerGroup);
-  }, [spaceBetween]);
+      window.addEventListener("resize", calculateSlidesPerGroup);
+      return () =>
+        window.removeEventListener("resize", calculateSlidesPerGroup);
+    }, [spaceBetween]);
 
   const onBeforeInit = (swiper: SwiperInstance) => {
     if (
@@ -85,11 +84,7 @@ const CustomSwiper = ({
             style={{ width: slidesPerView === "auto" ? "auto" : "100%" }}
           >
             <div className="flex items-center justify-center w-full">
-              <PopularServiceCard
-                title={service.title}
-                imgUrl={service.imgUrl}
-                bgColor={service.bgColor}
-              />
+             <ServiceCard image={service.image} title={service.title} />
             </div>
           </SwiperSlide>
         ))}
@@ -136,4 +131,4 @@ const CustomSwiper = ({
   );
 };
 
-export default CustomSwiper;
+export default CustomServiceSwiper;

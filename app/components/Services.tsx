@@ -1,7 +1,7 @@
 import React from "react";
 import ServiceCard, { Service } from "./ServiceCard";
 import PopularServices from "./PopularServices";
-import PopularServiceSwiper from "./PopularServiceSwiper";
+import ServiceSwiper from "./ServiceSwiper";
 
 export const services: Service[] = [
   {
@@ -53,7 +53,7 @@ export const services: Service[] = [
 const Services = () => {
   return (
     <div className="container mx-auto md:max-w-7xl mt-7">
-      <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-7 gap-4">
+      <div className="grid lg:hidden xl:grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 xl:grid-cols-9 gap-4">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -62,7 +62,9 @@ const Services = () => {
           />
         ))}
       </div>
-
+       <div className="hidden lg:block xl:hidden">
+        <ServiceSwiper />
+       </div>
       <PopularServices />
     </div>
   );

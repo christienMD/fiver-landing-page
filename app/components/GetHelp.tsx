@@ -6,9 +6,9 @@ const GetHelp = () => {
   return (
     <section className="container mx-auto md:max-w-7xl">
       <FiverrHeading label="Guides to help you grow" />
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 mt-10">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-5 mt-10">
         <div className="">
-          <div className="relative w-[267px] md:w-[290px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
+          <div className="relative w-[267px] md:w-[225px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
             <Image
               alt=""
               src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/0c7c1b07050e6ea2a0901861b48b6264-1658846941284/side%20hustle.jpeg"
@@ -22,7 +22,7 @@ const GetHelp = () => {
           </p>
         </div>
         <div className="">
-          <div className="relative w-[267px] md:w-[290px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
+          <div className="relative w-[267px] md:w-[225px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
             <Image
               alt=""
               src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/687d698a96f4eef875648319685ffeed-1687027332007/1685561103924-12profitableecommercebusinessideasyoucanstarttoday.jpg"
@@ -36,7 +36,7 @@ const GetHelp = () => {
           </h3>
         </div>
         <div className="">
-          <div className="relative w-[267px] md:w-[290px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
+          <div className="relative w-[267px] md:w-[225px] h-[186px] md:h-[200px] lg:w-[300px] lg:h-[250px] xl:w-[400px] xl:h-[300px] rounded-md">
             <Image
               alt=""
               src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_600,dpr_1.0/v1/attachments/generic_asset/asset/5907f56b0e099c84efe5f480840f43a2-1593446948907/home%20based%20online%20business-fiverr.jpg"

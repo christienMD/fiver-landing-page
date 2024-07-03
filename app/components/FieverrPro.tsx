@@ -3,8 +3,8 @@ import React from "react";
 
 const FieverrPro = () => {
   return (
-    <section className="grid lg:grid-cols-2 text-white bg-green-950 mb-14 container mx-auto md:max-w-7xl md:p-12 rounded-md">
-      <div className="flex flex-col gap-10">
+    <section className="grid lg:grid-cols-2 text-white bg-green-950 mb-14 p-6 md:p-12 rounded-md">
+      <div className="flex flex-col gap-10 p-6">
         <svg
           width="139"
           height="34"
@@ -20,11 +20,11 @@ const FieverrPro = () => {
             <path d="M139 24.5201V24.5629C139 25.814 138.003 26.8294 136.771 26.8294C135.541 26.8294 134.542 25.8152 134.542 24.5629V24.5201C134.542 23.269 135.539 22.2537 136.771 22.2537C138.001 22.2537 139 23.269 139 24.5201Z"></path>
           </g>
         </svg>
-        <h2 className="text-4xl md:text-6xl">
+        <h2 className="text-3xl sm:text-4xl md:text-6xl w-full">
           New e-Commerce project management service{" "}
           <span className="font-bold">made for your business</span>
         </h2>
-        <p className="">
+        <p className="w-full">
           An experienced e-Commerce project manager will plan, coordinate, and
           execute your project. Overseeing a team of e-Commerce experts,
           they&apos;ll handle everything from site building, design and content
@@ -41,8 +41,8 @@ const FieverrPro = () => {
           Get Started
         </button>
       </div>
-      <div className="flex items-center">
-        <div className="relative h-[300px] w-[500px]">
+      <div className="flex items-center justify-center">
+        <div className="relative h-[150px] w-[300px] md:h-[300px] md:w-[500px]">
           <Image
             alt=""
             src="https://fiverr-res.cloudinary.com/q_auto,f_auto,w_870,dpr_1.0/v1/attachments/generic_asset/asset/d85c8f7113e7f18d6fca144840de5afa-1718619183018/X1.png"
